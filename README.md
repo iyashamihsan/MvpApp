@@ -1,5 +1,7 @@
 # MvpApp
 
+(Forked version) from Rukey7 MvpApp https://github.com/Rukey7/MvpApp
+
 ##### The application of MVP architecture development is a summary of the knowledge that I have learned. I have done it for a while, the interface is more, the amount of code is still there, and there is a lot of packaging inside, the whole code is very well organized. clean. There are some libraries and classes that I have encapsulated in it, which can be used as a reference for reference. Any questions can be raised and discussed. There are good ideas and suggestions for modification. Welcome to submit the code.
 ##### Now Netease's image interface can't be used, so the "beauty" interface can't get the data. If you want to see the effect, you can try to change the interface under the "benefits" tab to the "beauty" interface. In the past, I just used my own hands. I don’t want to change the code.
 ## Screenshot
