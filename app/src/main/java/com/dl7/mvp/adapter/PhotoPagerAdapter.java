@@ -8,11 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.DataSource;
-import com.bumptech.glide.load.engine.GlideException;
-import com.bumptech.glide.request.Request;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 import com.dl7.mvp.R;
@@ -86,24 +81,7 @@ public class PhotoPagerAdapter extends PagerAdapter {
             }
         }
 
-        final RequestListener<Drawable> requestListener = new RequestListener<Drawable>() {
-            @Override
-            public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
-                loadingView.setVisibility(View.GONE);
-                tvReload.setVisibility(View.VISIBLE);
-                return false;
-            }
-
-            @Override
-            public boolean onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
-                loadingView.setVisibility(View.GONE);
-                tvReload.setVisibility(View.GONE);
-                photo.setImageDrawable(resource);
-                return true;
-            }
-        };
-
-        /*final RequestListener<String, Drawable> requestListener = new RequestListener<String, Drawable>() {
+        final RequestListener<String, Drawable> requestListener = new RequestListener<String, Drawable>() {
             @Override
             public boolean onException(Exception e, String model, Target<Drawable> target, boolean isFirstResource) {
                 loadingView.setVisibility(View.GONE);
@@ -118,7 +96,7 @@ public class PhotoPagerAdapter extends PagerAdapter {
                 photo.setImageDrawable(resource);
                 return true;
             }
-        };*/
+        };
         ImageLoader.loadCenterCrop(mContext, mImgList.get(position % mImgList.size()).getImgsrc(), photo, requestListener);
         photo.setOnPhotoTapListener(new PhotoViewAttacher.OnPhotoTapListener() {
             @Override

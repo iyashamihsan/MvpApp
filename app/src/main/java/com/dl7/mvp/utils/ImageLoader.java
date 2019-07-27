@@ -6,7 +6,6 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestListener;
-import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.Target;
 
 import java.io.File;
@@ -28,9 +27,8 @@ public final class ImageLoader {
     public static void loadFit(Context context, String url, ImageView view, int defaultResId) {
         if (PreferencesUtils.isShowImageAlways(context) || NetUtil.isWifiConnected(context)) {
             view.setScaleType(ImageView.ScaleType.FIT_XY);
-            RequestOptions options = new RequestOptions();
-            options.fitCenter().dontAnimate().placeholder(defaultResId);
-            Glide.with(context).load(url).apply(options).into(view);
+
+            Glide.with(context).load(url).fitCenter().dontAnimate().placeholder(defaultResId).into(view);
         } else {
             view.setImageResource(defaultResId);
         }
@@ -38,11 +36,7 @@ public final class ImageLoader {
 
     public static void loadCenterCrop(Context context, String url, ImageView view, int defaultResId) {
         if (PreferencesUtils.isShowImageAlways(context) || NetUtil.isWifiConnected(context)) {
-
-            RequestOptions options = new RequestOptions();
-            options.centerCrop().dontAnimate().placeholder(defaultResId);
-
-            Glide.with(context).load(url).apply(options).into(view);
+            Glide.with(context).load(url).centerCrop().dontAnimate().placeholder(defaultResId).into(view);
         } else {
             view.setImageResource(defaultResId);
         }
@@ -50,11 +44,7 @@ public final class ImageLoader {
 
     public static void loadFitCenter(Context context, String url, ImageView view, int defaultResId) {
         if (PreferencesUtils.isShowImageAlways(context) || NetUtil.isWifiConnected(context)) {
-
-            RequestOptions options = new RequestOptions();
-            options.fitCenter().dontAnimate().placeholder(defaultResId);
-
-            Glide.with(context).load(url).into(view);
+            Glide.with(context).load(url).fitCenter().dontAnimate().placeholder(defaultResId).into(view);
         } else {
             view.setImageResource(defaultResId);
         }
@@ -69,18 +59,12 @@ public final class ImageLoader {
      * @param listener
      */
     public static void loadFitCenter(Context context, String url, ImageView view, RequestListener listener) {
-        RequestOptions options = new RequestOptions();
-        options.fitCenter().dontAnimate();
-
-        Glide.with(context).load(url).apply(options).listener(listener).into(view);
+        Glide.with(context).load(url).fitCenter().dontAnimate().listener(listener).into(view);
     }
 
     public static void loadCenterCrop(Context context, String url, ImageView view, RequestListener listener) {
 
-        RequestOptions options = new RequestOptions();
-        options.fitCenter().dontAnimate();
-
-        Glide.with(context).load(url).apply(options).listener(listener).into(view);
+        Glide.with(context).load(url).fitCenter().dontAnimate().listener(listener).into(view);
     }
 
     /**
@@ -95,12 +79,9 @@ public final class ImageLoader {
      */
     public static void loadFitOverride(Context context, String url, ImageView view, int defaultResId,
                                        int width, int height) {
-        RequestOptions options = new RequestOptions();
-        options.fitCenter().dontAnimate().override(width,height).placeholder(defaultResId);
-
         if (PreferencesUtils.isShowImageAlways(context) || NetUtil.isWifiConnected(context)) {
             Glide.with(context).load(url)
-                    .apply(options)
+                    .fitCenter().dontAnimate().override(width,height).placeholder(defaultResId)
                     .into(view);
         } else {
             view.setImageResource(defaultResId);

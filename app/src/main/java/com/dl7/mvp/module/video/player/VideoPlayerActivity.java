@@ -15,7 +15,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 import com.dl7.downloaderlib.model.DownloadStatus;
 import com.dl7.mvp.R;
 import com.dl7.mvp.engine.DownloaderWrapper;
@@ -135,10 +134,8 @@ public class VideoPlayerActivity extends BaseActivity<IVideoPresenter> implement
             }
         });
 
-        RequestOptions options = new RequestOptions();
-        options.fitCenter();
 
-        Glide.with(this).load(mVideoData.getCover()).apply(options).into(mPlayerView.mPlayerThumb);
+        Glide.with(this).load(mVideoData.getCover()).fitCenter().into(mPlayerView.mPlayerThumb);
         mEtContent.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {

@@ -38,8 +38,8 @@ dependencies {
     implementation 'com.github.ctiao:DanmakuFlameMaster:0.6.2'
 
     // add
-    implementation 'tv.danmaku.ijk.media:ijkplayer-armv5:0.6.2'
-//    implementation 'tv.danmaku.ijk.media:ijkplayer-arm64:0.6.2'
-    implementation 'tv.danmaku.ijk.media:ijkplayer-x86:0.6.2'
-//    implementation 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.6.2'
+ //   implementation 'tv.danmaku.ijk.media:ijkplayer-armv5:0.6.2'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-arm64:0.6.2'
+//    implementation 'tv.danmaku.ijk.media:ijkplayer-x86:0.6.2'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.6.2'
 }
