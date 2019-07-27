@@ -1,11 +1,10 @@
 # MvpApp
 
-##### 练习MVP架构开发的App，算是对自己学过的知识做一个总结，做了有一段时间，界面比较多，代码量还是有的，里面做了大量封装，整体代码整理得很干净。里面有我自己封装的一些库和类，可以作为借鉴参考，有什么问题可以提出来探讨，有好的想法和修改建议也欢迎提交代码上来。
-##### 现在网易的图片接口不能用了，所以“美女”界面获取不到数据了，如果想看效果的可以试着把“福利”标签下的界面按“美女”界面的处理方式改过去，刚好可以拿来自己练手~，代码我暂时不想去改了。
-
+##### The application of MVP architecture development is a summary of the knowledge that I have learned. I have done it for a while, the interface is more, the amount of code is still there, and there is a lot of packaging inside, the whole code is very well organized. clean. There are some libraries and classes that I have encapsulated in it, which can be used as a reference for reference. Any questions can be raised and discussed. There are good ideas and suggestions for modification. Welcome to submit the code.
+##### Now Netease's image interface can't be used, so the "beauty" interface can't get the data. If you want to see the effect, you can try to change the interface under the "benefits" tab to the "beauty" interface. In the past, I just used my own hands. I don’t want to change the code.
 ## Screenshot
 
-##### 项目结构：
+##### Project structure：
 
 ![](https://raw.githubusercontent.com/Rukey7/ScreenShot/master/MvpApp/project.png)
 
@@ -24,82 +23,82 @@
 <img src="https://raw.githubusercontent.com/Rukey7/ScreenShot/master/MvpApp/%E5%9B%BE%E7%89%87%E5%8A%A8%E5%9B%BE.gif" height = "400" alt="图片动图" align=center />
 <img src="https://raw.githubusercontent.com/Rukey7/ScreenShot/master/MvpApp/%E4%B8%8B%E8%BD%BD%E5%8A%A8%E5%9B%BE.gif" height = "400" alt="下载管理" align=center />
 
-## 用到的第三方库
+## Third-party library used
 
 - [leakcanary](https://github.com/square/leakcanary)
-	：检测应用内存泄漏问题，这个都知道吧
+: Detecting application memory leaks, this one knows
 - [butterknife](https://github.com/JakeWharton/butterknife)
-	：帮助Android控件和回调的进行依赖注入，JakeWharton大神的力作
+: Helping Android controls and callbacks with dependency injection, JakeWharton's masterpiece
 - [dagger2](https://github.com/google/dagger)
-	：Android和Java依赖注入库
+: Android and Java dependency injection libraries
 - [rxjava](https://github.com/ReactiveX/RxJava)
-	：一个实现异步操作的库，现在非常火
-- [RxAndroid](https://github.com/ReactiveX/RxAndroid)
-	：用于Android的Rxjava绑定库
+: A library that implements asynchronous operations, it's very hot now
+- [RxAndroid] (https://github.com/ReactiveX/RxAndroid)
+: Rxjava binding library for Android
 - [RxBinding](https://github.com/JakeWharton/RxBinding)
-	：配合Rxjava处理控件异步调用
-- [RxLifecycle](https://github.com/trello/RxLifecycle)
-	：防止RxJava中subscription导致内存泄漏
+: With Rxjava processing control asynchronous call
+- [RxLifecycle] (https://github.com/trello/RxLifecycle)
+: Preventing a memory leak from a subscription in RxJava
 - [RxPermissions](https://github.com/tbruyelle/RxPermissions)
-	：基于RxJava开发的用于帮助在Android 6.0中处理运行时权限检测
+: Based on RxJava development to help handle runtime permission detection in Android 6.0
 - [retrofit](https://github.com/square/retrofit)
-	：目前最好用的网络通讯库，应该都用过吧
+: The best network communication library currently used should be used.
 - [okhttp](https://github.com/square/okhttp)
-	：okhttp和retrofit做网络通讯是绝配
+: okhttp and retrofit do network communication is a perfect match
 - [greenDAO](https://github.com/greenrobot/greenDAO)
-	：ORM数据库，能配合rxjava使用
-- [logger](https://github.com/orhanobut/logger)
-	：Log库，让打印的Log变得非常漂亮
+: ORM database, can be used with rxjava
+- [logger] (https://github.com/orhanobut/logger)
+:Log library, making the printed Log very beautiful
 - [glide](https://github.com/bumptech/glide)
-	：Google出品的图片加载库，这里有非常好的指导文档：https://mrfu.me/2016/02/27/Glide_Getting_Started/
-- [BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
-	：很好用的RecyclerView多功能适配器库，项目里我并没有直接用这个库，而是按我自己使用习惯在它较早的代码上做了些改动
+: Google's image loading library, there is a very good guidance document: https://mrfu.me/2016/02/27/Glide_Getting_Started/
+- [BaseRecyclerViewAdapterHelper] (https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
+: Very good RecyclerView multi-function adapter library, I did not directly use this library in the project, but made some changes to its earlier code according to my own habits.
 - [recyclerview-animators](https://github.com/wasabeef/recyclerview-animators)
-	：RecyclerView的动画库，内置了非常多的动画效果
+: RecyclerView's animation library with a lot of animation effects built in
 - [CircleImageView](https://github.com/hdodenhof/CircleImageView)
-	：非常常用的用来显示圆形头像的库
+: Very common library for displaying round avatars
 - [PhotoView](https://github.com/chrisbanes/PhotoView)
-	：可根据手势进行缩放的图像库，这个也很常见
+: Image library that can be scaled according to gestures, this is also very common
 - [AndroidImageSlider](https://github.com/daimajia/AndroidImageSlider)
-	：展示头部Banner的库，动画效果很多，就是需要依赖picasso和nineoldandroids这两个库
+: Show the library of the head Banner, the animation effect is a lot, that is, you need to rely on the two libraries picasso and nineoldandroids
 - [NumberProgressBar](https://github.com/daimajia/NumberProgressBar)
-	：性感的数字进度条
+: Sexy digital progress bar
 - [FlycoTabLayout](https://github.com/H07000223/FlycoTabLayout)
-	：样式比TabLayout多样的Tab库
+: Tab library with more style than TabLayout
 - [FlycoDialog](https://github.com/H07000223/FlycoDialog_Master)
-	：多功能的Dialog
-- [FlycoLabelView](https://github.com/H07000223/FlycoLabelView)
-	：添加角标的库
+: Versatile Dialog
+- [FlycoLabelView] (https://github.com/H07000223/FlycoLabelView)
+: Adding a library of corners
 - [gson](https://github.com/google/gson)
-	：帮助Json和Object转换，这个也常用
+: Help Json and Object conversion, this is also commonly used
 - [ijkplayer](https://github.com/Bilibili/ijkplayer)
-	：B站出品的视频解码库
-- [DanmakuFlameMaster](https://github.com/Bilibili/DanmakuFlameMaster)
-	：同样B站出品的弹幕库
-- [ShineButton](https://github.com/ChadCSong/ShineButton)
-	：炫酷效果的点击按钮，主要用于显示收藏之类的动画
+: Video decoding library produced by station B
+- [DanmakuFlameMaster] (https://github.com/Bilibili/DanmakuFlameMaster)
+:The same barrage library produced by station B
+- [ShineButton] (https://github.com/ChadCSong/ShineButton)
+: The cool effect click button is mainly used to display animations such as favorites.
 - [RichText](https://github.com/zzhoujay/RichText)
-	：富文本的处理库，用起来挺方便就是有内存泄漏- -
-- [Android-SpinKit](https://github.com/ybq/Android-SpinKit)
-	：集成多种动画效果的Drawable，之前有看源码觉得代码封装得挺好，动画不仅仅只能用在View上
+: Rich text processing library, it is very convenient to use it is a memory leak -
+- [Android-SpinKit] (https://github.com/ybq/Android-SpinKit)
+: Drawable integrated with a variety of animation effects, before looking at the source code, I feel that the code is well packaged, and the animation can only be used on the View.
 - [filepicker](https://github.com/Angads25/android-filepicker)
-	：这个是用来处理PreferenceScreen的文件选中库，PreferenceScreen感觉平时不怎么看到使用，用法到时挺特别
+: This is used to process the file selection library of PreferenceScreen. PreferenceScreen feels that it is not usually seen in the usual use.
 - [tinker](https://github.com/Tencent/tinker)
-	：微信Android热补丁方案，功能强大，和其它热修补方案对比看这里[wiki](https://github.com/Tencent/tinker/wiki)
+: WeChat Android hot patch program, powerful, and other hot patching scheme comparison here [wiki] (https://github.com/Tencent/tinker/wiki)
 - [DragSlopLayout](https://github.com/Rukey7/DragSlopLayout)
-	：一个辅助开发拖拽功能的库，这是我为了做这个App的某些功能封装的库- -，现在倒也有用在工作的项目上
-- [IjkPlayerView](https://github.com/Rukey7/IjkPlayerView)
-	：基于ijkplayer开发的播放器，也是为了做这个App的视频播放功能封装的库- -，里面加了弹幕功能，感兴趣可以看下
+: A library that assists in the development of drag-and-drop functionality. This is the library I have packaged for some of the features of this app - and it is now also useful on working projects.
+- [IjkPlayerView] (https://github.com/Rukey7/IjkPlayerView)
+: Based on the player developed by ijkplayer, it is also a library for the video playback function of this app. - It has a barrage function inside, so you can watch it with interest.
 - [TagLayout](https://github.com/Rukey7/TagLayout)
-	：标签库，可做为自定义按钮来使用
+: Tag library, which can be used as a custom button
 	
 Thanks
 ---
 
-- 感谢所有优秀的开源项目
+- Thanks to all the excellent open source projects.
 - [OuNews](https://github.com/oubowu/OuNews)
-	：最初是看了这个项目才开始做的，学了不少东西
+: I started watching this project and started to learn a lot.
 
 Statement
 ---
-该项目仅供交流学习使用，如有侵犯版权问题，可通知本人及时删除
+This project is for exchange learning only. If there is copyright infringement, you can notify me to delete it in time.
